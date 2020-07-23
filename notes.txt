@@ -1,0 +1,6 @@
+intro screen:
+background: sunny day;
+as the viewport gets smalller have the sunnny move up.
+
+Image cred: 
+<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>

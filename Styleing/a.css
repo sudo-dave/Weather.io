@@ -14,18 +14,20 @@ body {
   display: none;
   animation-name: none;
   animation-duration: 0.7s;
+  color: black;
   /* display:inline-block; */
 }
 #cardContainer {
   width: 500px;
   height: 800px;
-  background-color: blue;
+  background-color: rgb(24, 47, 83);
   border-radius: 10%;
   margin-top: 5rem;
   /* display: inline-block; */
   animation-duration: 1.4s;
   display: none;
   animation-name: none;
+  color: white;
 }
 @keyframes fadein {
   from {
@@ -42,4 +44,12 @@ body {
   to {
     opacity: 0;
   }
+}
+#mainDay {
+  border-radius: 10% 10% 0 0;
+  width: 500px;
+  height: 400px;
+  display: inline-block;
+  background-color: yellowgreen;
+  text-align: left;
 }
