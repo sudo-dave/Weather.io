@@ -94,9 +94,11 @@ function getCurretWeather(input) {
       var tempMin = data["main"]["temp_min"];
       var tempMax = data["main"]["temp_max"];
       var humid = data["main"]["humidity"];
+      var iconId = data["weather"][0]["icon"];
 
       var img = document.createElement("img");
-      img.src = "Images/01n.png";
+
+      img.src = "Images/" + iconId + ".png";
       img.id = "currentTempIcon";
 
       city.textContent = name;
@@ -105,7 +107,7 @@ function getCurretWeather(input) {
       currentTempature.appendChild(img);
       minTemp.textContent = Math.round(tempMin) + "°";
       maxTemp.textContent = Math.round(tempMax) + "°";
-      humididty.textContent = Math.round(humid) + "";
+      humididty.textContent = Math.round(humid) + "%";
 
       localStorage.setItem("Location 1", input + "");
       // *********

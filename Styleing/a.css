@@ -52,18 +52,18 @@ body {
 #mainDay {
   border-radius: 10% 10% 0 0;
   width: 500px;
-  height: 400px;
+  height: 395px;
   display: inline-block;
   background-color: yellowgreen;
   text-align: center;
 }
 #City {
   margin-top: 50px;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.7rem;
   font-size: 2.8rem;
 }
 #description {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
   letter-spacing: 0.3rem;
 }
@@ -83,6 +83,7 @@ body {
 #moreData > div {
   text-align: center;
   margin: 45px 60px;
+  /* hadskjfhakdjsf */
   margin-bottom: 0;
   font-size: 10px;
 }
@@ -93,4 +94,12 @@ body {
 #moreData > div > h1 {
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
+}
+/* bottomContianer */
+.forecastContainer {
+  display: flex;
+  justify-content: center;
+}
+.forecast {
+  margin: 15px;
 }
