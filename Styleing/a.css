@@ -6,6 +6,7 @@
 
 body {
   background-color: gray;
+
   text-align: center;
 }
 #inputContainer {
@@ -49,12 +50,12 @@ body {
   color: white;
 }
 
+/* ************************* */
 #mainDay {
   border-radius: 10% 10% 0 0;
   width: 500px;
   height: 395px;
   display: inline-block;
-  background-color: yellowgreen;
   text-align: center;
 }
 #City {
@@ -95,11 +96,12 @@ body {
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
 }
+/* ***** */
 /* bottomContianer */
-.forecastContainer {
+/* .forecastContainer {
   display: flex;
   justify-content: center;
 }
 .forecast {
   margin: 15px;
-}
+} */
