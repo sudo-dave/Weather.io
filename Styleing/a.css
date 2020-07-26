@@ -5,8 +5,7 @@
 }
 
 body {
-  background-color: gray;
-
+  background-color: rgb(35, 65, 114);
   text-align: center;
 }
 #inputContainer {
@@ -15,8 +14,24 @@ body {
   display: none;
   animation-name: none;
   animation-duration: 0.7s;
-  color: black;
+  color: white;
+  line-height: 2.5;
   /* display:inline-block; */
+}
+#inputContainer > h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+}
+#inputContainer > input {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#locBtn {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
 }
 
 @keyframes fadein {
@@ -36,65 +51,78 @@ body {
   }
 }
 
-#cardContainer {
+.card {
   font-family: "Roboto", sans-serif;
   width: 500px;
   height: 800px;
   background-color: rgb(24, 47, 83);
-  border-radius: 10%;
+  border-radius: 4%;
   margin-top: 5rem;
+
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
   /* display: inline-block; */
   animation-duration: 1.4s;
   display: none;
   animation-name: none;
   color: white;
+  border-color: darkgrey;
+  border-style: solid;
+  /* filter: drop-shadow(30px 10px 4px #3d3d3d); */
+  filter: drop-shadow(0 0 0.75rem #000000);
 }
 
 /* ************************* */
-#mainDay {
+.mainDay {
   border-radius: 10% 10% 0 0;
   width: 500px;
   height: 395px;
   display: inline-block;
   text-align: center;
 }
-#City {
+.City {
   margin-top: 50px;
   letter-spacing: 0.7rem;
   font-size: 2.8rem;
 }
-#description {
+.description {
   font-size: 1.6rem;
   margin-bottom: 2rem;
   letter-spacing: 0.3rem;
 }
-#currentTemp {
+.currentTemp {
   font-size: 5rem;
   font-weight: 100;
 }
-#currentTempIcon {
+.currentTempIcon {
   width: 12%;
   margin-left: 17px;
 }
 /* afdadfadf */
-#moreData {
+.moreData {
   display: flex;
   justify-content: center;
 }
-#moreData > div {
+.moreData > div {
   text-align: center;
   margin: 45px 60px;
   /* hadskjfhakdjsf */
   margin-bottom: 0;
   font-size: 10px;
 }
-#moreData > div > p {
+.moreData > div > p {
   font-size: 1.5rem;
   font-weight: 100;
 }
-#moreData > div > h1 {
+.moreData > div > h1 {
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
+}
+
+.mainDay > button {
+  font-size: large;
+  margin-left: 400px;
+  color: red;
 }
 /* ***** */
 /* bottomContianer */

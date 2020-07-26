@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="Styleing\a.css" />
+    <script src="https://use.fontawesome.com/e47f3c5d2c.js"></script>
   </head>
 
   <body>
@@ -16,42 +18,35 @@
       <h1>
         Welcome.
       </h1>
+
       <input class="userInput" type="text" placeholder="Los Angles, CA" />
       <button id="locBtn">
-        CLICK
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
       </button>
     </div>
 
     <div id="cardContainer">
-      <div id="mainDay">
-        <h2 id="City"></h2>
-        <h2 id="description"></h2>
-        <h1 id="currentTemp">
-          <!-- <img id="currentTempIcon" src="Images\01n.png" alt="" /> -->
-        </h1>
-
-        <div id="moreData">
-          <div>
-            <h1>
-              Humidity
-            </h1>
-            <p id="humididy"></p>
-          </div>
-          <div>
-            <h1>
-              Min
-            </h1>
-            <p id="minTemp"></p>
-          </div>
-
-          <div>
-            <h1>
-              Max
-            </h1>
-            <p id="maxTemp"></p>
+      <!-- <div id="card" class="">
+        <div id="mainDay">
+          <h2 id="City"></h2>
+          <h2 id="description"></h2>
+          <h1 id="currentTemp"></h1>
+          <div id="moreData">
+            <div>
+              <h1>Humidity</h1>
+              <p id="humididy"></p>
+            </div>
+            <div>
+              <h1>Min</h1>
+              <p id="minTemp"></p>
+            </div>
+            <div>
+              <h1>Max</h1>
+              <p id="maxTemp"></p>
+            </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <script src="Scripts\app.js"></script>
