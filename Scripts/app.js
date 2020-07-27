@@ -54,6 +54,23 @@ function newUser() {
       //  document.getElementById(itemDel + "").remove();
     }
   });
+  document.addEventListener("click", function (event) {
+    ///USE eveent.target.classList, instead of event.target.id
+    if (event.target && event.target.classList == "delBtn") {
+      if (localStorage.length == 1) {
+        alert("Cant do that");
+      } else {
+        let itemDel = event.target.id;
+        itemDel = itemDel.slice(0, -1);
+        // *****
+        document.getElementById(itemDel + "").remove();
+        console.log("the id is " + itemDel);
+        localStorage.removeItem("" + itemDel);
+        console.log(itemDel);
+        //  localStorage.removeItem(index + "");
+      }
+    }
+  });
 
   // userInputTextFeild.addEventListener("focusin", (fucnion) => {
   //   userInputTextFeild.placeholder = "";
@@ -336,6 +353,25 @@ function returning() {
       //  alert(ans + "");
 
       //  document.getElementById(itemDel + "").remove();
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    ///USE eveent.target.classList, instead of event.target.id
+    if (event.target && event.target.classList == "delBtn") {
+      if (localStorage.length == 1) {
+        alert("Cant do that");
+      } else {
+        let itemDel = event.target.id;
+        itemDel = itemDel.slice(0, -1);
+
+        // ******
+        document.getElementById(itemDel + "").remove();
+        localStorage.removeItem("" + itemDel);
+        console.log(itemDel);
+
+        //  localStorage.removeItem(index + "");
+      }
     }
   });
 
