@@ -58,7 +58,8 @@ function newUser() {
     ///USE eveent.target.classList, instead of event.target.id
     if (event.target && event.target.classList == "delBtn") {
       if (localStorage.length == 1) {
-        alert("Cant do that");
+        localStorage.clear();
+        location.reload();
       } else {
         let itemDel = event.target.id;
         itemDel = itemDel.slice(0, -1);
@@ -116,7 +117,11 @@ function getCurretWeather(input) {
 
       if (index == "false") throw Error("max card limit");
 
-      if (index != "zero") document.getElementById("addcard").remove();
+      try {
+        document.getElementById("addcard").remove();
+      } catch (err) {
+        console.log(err + "");
+      }
 
       index = index + '"';
       start.insertAdjacentHTML(
@@ -213,10 +218,14 @@ function loadWeather(input, index) {
       let start = document.getElementById("cardContainer");
 
       // *******
-      // let index = localData(input);
+      // let index = localData(input)
       if (index == "false") throw Error("max card limit");
 
-      if (index != "zero") document.getElementById("addcard").remove();
+      try {
+        document.getElementById("addcard").remove();
+      } catch (err) {
+        console.log(err + "");
+      }
 
       index = index + '"';
       start.insertAdjacentHTML(
@@ -360,7 +369,8 @@ function returning() {
     ///USE eveent.target.classList, instead of event.target.id
     if (event.target && event.target.classList == "delBtn") {
       if (localStorage.length == 1) {
-        alert("Cant do that");
+        localStorage.clear();
+        location.reload();
       } else {
         let itemDel = event.target.id;
         itemDel = itemDel.slice(0, -1);
