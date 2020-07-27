@@ -36,8 +36,8 @@ function newUser() {
 
   document.addEventListener("click", function (event) {
     ///USE eveent.target.classList, instead of event.target.id
-    if (event.target && event.target.classList == "addBtn") {
-      let newInput = prompt("entr soemthing");
+    if (event.target && event.target.classList == "fa fa-plus-circle fa-3x") {
+      let newInput = prompt("Enter a city name");
       if (newInput == "") {
         alert("Enter a city");
       } else {
@@ -99,16 +99,18 @@ function getCurretWeather(input) {
 
       if (index == "false") throw Error("max card limit");
 
+      if (index != "zero") document.getElementById("addcard").remove();
+
       index = index + '"';
       start.insertAdjacentHTML(
         "beforeend",
-        ' <div class="card" id ="' +
+        '  <div class="card" id ="' +
           index +
           '><div class="mainDay" id ="' +
           index +
-          '> <button class ="addBtn" id =' +
+          '> <button class ="delBtn" id =' +
           index +
-          '> click </button> <h2 class="City"id ="' +
+          '> X </button> <h2 class="City"id ="' +
           index +
           '></h2> <h2 class="description"id ="' +
           index +
@@ -122,7 +124,7 @@ function getCurretWeather(input) {
           index +
           '></p></div> <div> <h1> Max </h1> <p class="maxTemp"id ="' +
           index +
-          "></p> </div> </div></div></div>"
+          '></p> </div> </div></div> </div><i class="fa fa-plus-circle fa-3x" id ="addcard" aria-hidden="true"></i>'
       );
       index = index.slice(0, -1);
       console.log(index + "");
@@ -195,19 +197,20 @@ function loadWeather(input, index) {
 
       // *******
       // let index = localData(input);
-
       if (index == "false") throw Error("max card limit");
+
+      if (index != "zero") document.getElementById("addcard").remove();
 
       index = index + '"';
       start.insertAdjacentHTML(
         "beforeend",
-        ' <div class="card" id ="' +
+        '  <div class="card" id ="' +
           index +
           '><div class="mainDay" id ="' +
           index +
-          '> <button class ="addBtn" id =' +
+          '> <button class ="delBtn" id =' +
           index +
-          '> click </button> <h2 class="City"id ="' +
+          '> X </button> <h2 class="City"id ="' +
           index +
           '></h2> <h2 class="description"id ="' +
           index +
@@ -221,8 +224,9 @@ function loadWeather(input, index) {
           index +
           '></p></div> <div> <h1> Max </h1> <p class="maxTemp"id ="' +
           index +
-          "></p> </div> </div></div></div>"
+          '></p> </div> </div></div> </div><i class="fa fa-plus-circle fa-3x" id ="addcard" aria-hidden="true"></i>'
       );
+
       index = index.slice(0, -1);
       console.log(index + "");
       // *****
@@ -316,8 +320,8 @@ function returning() {
 
   document.addEventListener("click", function (event) {
     ///USE eveent.target.classList, instead of event.target.id
-    if (event.target && event.target.classList == "addBtn") {
-      let newInput = prompt("entr soemthing");
+    if (event.target && event.target.classList == "fa fa-plus-circle fa-3x") {
+      let newInput = prompt("Enter a city name");
       if (newInput == "") {
         alert("Enter a city");
       } else {
