@@ -54,7 +54,7 @@ body {
 .card {
   font-family: "Roboto", sans-serif;
   width: 500px;
-  height: 800px;
+  height: 750px;
   background-color: rgb(24, 47, 83);
   border-radius: 4%;
   margin-top: 5rem;
@@ -66,10 +66,10 @@ body {
   display: none;
   animation-name: none;
   color: white;
-  border-color: darkgrey;
+  border-color: darkgray;
   border-style: solid;
-  /* filter: drop-shadow(30px 10px 4px #3d3d3d); */
-  filter: drop-shadow(0 0 0.75rem #000000);
+  filter: drop-shadow(30px 10px 10px #2c2c2c);
+  /* filter: drop-shadow(0 0 0.75rem #000000); */
 }
 
 /* ************************* */
@@ -77,22 +77,32 @@ body {
   border-radius: 10% 10% 0 0;
   width: 500px;
   height: 395px;
+
   display: inline-block;
   text-align: center;
 }
 .City {
-  margin-top: 50px;
+  margin-top: 100px;
   letter-spacing: 0.7rem;
-  font-size: 2.8rem;
+  font-size: 3rem;
+  filter: drop-shadow(0 0 0.075rem #ffffff);
+
+  /* filter: drop-shadow(0 0 0.75rem #000000); */
 }
 .description {
+  margin-top: 0.6rem;
   font-size: 1.6rem;
   margin-bottom: 2rem;
   letter-spacing: 0.3rem;
+  /* filter: drop-shadow(0 0 0.75rem #000000); */
+  filter: drop-shadow(0 0 0.075rem #ffffff);
 }
 .currentTemp {
-  font-size: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 6rem;
   font-weight: 100;
+  filter: drop-shadow(0 0 0.075rem #ffffff);
 }
 .currentTempIcon {
   width: 12%;
@@ -105,18 +115,21 @@ body {
 }
 .moreData > div {
   text-align: center;
-  margin: 45px 60px;
+  margin: 45px 40px;
   /* hadskjfhakdjsf */
   margin-bottom: 0;
   font-size: 10px;
 }
 .moreData > div > p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 100;
+  filter: drop-shadow(0 0 0.075rem #ffffff);
 }
 .moreData > div > h1 {
-  font-size: 1.3rem;
-  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  border-bottom: solid darkgrey;
+  filter: drop-shadow(0 0 0.075rem #ffffff);
 }
 
 .mainDay > button {
@@ -126,6 +139,7 @@ body {
   background: transparent;
   border: none !important;
   color: white;
+  filter: drop-shadow(0 0 0.075rem #ffffff);
 }
 
 .mainDay > button:hover {
@@ -146,9 +160,10 @@ body {
   /* filter: drop-shadow(30px 10px 4px #3d3d3d); */
   filter: drop-shadow(0 0 0.75rem #000000);
   display: inline-block;
-
-  margin-top: 100px;
-  margin-bottom: 100px;
+  /* width: 1px;
+  height: 4000px; */
+  /* margin-top: 100px;
+  margin-bottom: 100px; */
 }
 #cardContainer > i:hover {
   color: black;

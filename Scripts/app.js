@@ -111,7 +111,7 @@ function getCurretWeather(input) {
     })
     .then((data) => {
       let start = document.getElementById("cardContainer");
-
+      console.log(data);
       // *******
       let index = localData(input);
 
@@ -142,9 +142,9 @@ function getCurretWeather(input) {
           index +
           '><div><h1> Humidity</h1> <p class="humididy"id ="' +
           index +
-          '></p></div><div> <h1> Min </h1><p class="minTemp"id ="' +
+          '></p></div><div> <h1> Preresure </h1><p class="Preresure"id ="' +
           index +
-          '></p></div> <div> <h1> Max </h1> <p class="maxTemp"id ="' +
+          '></p></div> <div> <h1> Wind </h1> <p class="Wind"id ="' +
           index +
           '></p> </div> </div></div> </div><i class="fa fa-plus-circle fa-3x" id ="addcard" aria-hidden="true"></i>'
       );
@@ -162,14 +162,17 @@ function getCurretWeather(input) {
         "#" + index + ".currentTempIcon"
       );
       let humididty = document.querySelector("#" + index + ".humididy");
-      let minTemp = document.querySelector("#" + index + ".minTemp");
-      let maxTemp = document.querySelector("#" + index + ".maxTemp");
-
+      // *****
+      let airP = document.querySelector("#" + index + ".Preresure");
+      let wind = document.querySelector("#" + index + ".Wind");
+      // *****
       var name = data["name"];
       var currentTemp = data["main"]["temp"];
       var descr = data["weather"][0]["description"];
-      var tempMin = data["main"]["temp_min"];
-      var tempMax = data["main"]["temp_max"];
+      // *****
+      var currentAir = data["main"]["pressure"];
+      var currentSpeed = data["wind"]["speed"];
+      // *****
       var humid = data["main"]["humidity"];
       var iconId = data["weather"][0]["icon"];
 
@@ -182,8 +185,10 @@ function getCurretWeather(input) {
       description.textContent = descr;
       currentTempature.innerHTML = Math.round(currentTemp) + "°";
       currentTempature.appendChild(img);
-      minTemp.textContent = Math.round(tempMin) + "°";
-      maxTemp.textContent = Math.round(tempMax) + "°";
+      // *****
+      airP.textContent = Math.round(currentAir) + " hPa";
+      wind.textContent = Math.round(currentSpeed) + " mph";
+      // *****
       humididty.textContent = Math.round(humid) + "%";
 
       // *********
@@ -246,9 +251,9 @@ function loadWeather(input, index) {
           index +
           '><div><h1> Humidity</h1> <p class="humididy"id ="' +
           index +
-          '></p></div><div> <h1> Min </h1><p class="minTemp"id ="' +
+          '></p></div><div> <h1> Preresure </h1><p class="Preresure"id ="' +
           index +
-          '></p></div> <div> <h1> Max </h1> <p class="maxTemp"id ="' +
+          '></p></div> <div> <h1> Wind </h1> <p class="Wind"id ="' +
           index +
           '></p> </div> </div></div> </div><i class="fa fa-plus-circle fa-3x" id ="addcard" aria-hidden="true"></i>'
       );
@@ -267,14 +272,17 @@ function loadWeather(input, index) {
         "#" + index + ".currentTempIcon"
       );
       let humididty = document.querySelector("#" + index + ".humididy");
-      let minTemp = document.querySelector("#" + index + ".minTemp");
-      let maxTemp = document.querySelector("#" + index + ".maxTemp");
-
+      // *****
+      let airP = document.querySelector("#" + index + ".Preresure");
+      let wind = document.querySelector("#" + index + ".Wind");
+      // *****
       var name = data["name"];
       var currentTemp = data["main"]["temp"];
       var descr = data["weather"][0]["description"];
-      var tempMin = data["main"]["temp_min"];
-      var tempMax = data["main"]["temp_max"];
+      // *****
+      var currentAir = data["main"]["pressure"];
+      var currentSpeed = data["wind"]["speed"];
+      // *****
       var humid = data["main"]["humidity"];
       var iconId = data["weather"][0]["icon"];
 
@@ -287,8 +295,10 @@ function loadWeather(input, index) {
       description.textContent = descr;
       currentTempature.innerHTML = Math.round(currentTemp) + "°";
       currentTempature.appendChild(img);
-      minTemp.textContent = Math.round(tempMin) + "°";
-      maxTemp.textContent = Math.round(tempMax) + "°";
+      // *****
+      airP.textContent = Math.round(currentAir) + " hPa";
+      wind.textContent = Math.round(currentSpeed) + " mph";
+      // *****
       humididty.textContent = Math.round(humid) + "%";
 
       // *********
