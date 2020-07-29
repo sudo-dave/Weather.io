@@ -172,6 +172,10 @@ body {
 
 #addIcon {
   color: white;
+  filter: drop-shadow(0 0 0.75rem #000000);
+}
+#addIcon:hover {
+  color: lightblue;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
