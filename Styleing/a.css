@@ -54,40 +54,36 @@ body {
 .card {
   font-family: "Roboto", sans-serif;
   width: 500px;
-  height: 750px;
+  height: 650px;
   background-color: rgb(24, 47, 83);
   border-radius: 4%;
   margin-top: 5rem;
 
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   /* display: inline-block; */
   animation-duration: 1.4s;
   display: none;
   animation-name: none;
   color: white;
-  border-color: darkgray;
+  border-color: darkgrey;
   border-style: solid;
-  filter: drop-shadow(30px 10px 10px #2c2c2c);
-  /* filter: drop-shadow(0 0 0.75rem #000000); */
+  /* filter: drop-shadow(30px 10px 4px #3d3d3d); */
+  filter: drop-shadow(30px 10px 10px #292929);
 }
 
 /* ************************* */
 .mainDay {
   border-radius: 10% 10% 0 0;
   width: 500px;
-  height: 395px;
-
+  height: 700px;
   display: inline-block;
   text-align: center;
 }
 .City {
-  margin-top: 100px;
   letter-spacing: 0.7rem;
   font-size: 3rem;
   filter: drop-shadow(0 0 0.075rem #ffffff);
-
-  /* filter: drop-shadow(0 0 0.75rem #000000); */
 }
 .description {
   margin-top: 0.6rem;
@@ -115,7 +111,7 @@ body {
 }
 .moreData > div {
   text-align: center;
-  margin: 45px 40px;
+  margin: 45px 30px;
   /* hadskjfhakdjsf */
   margin-bottom: 0;
   font-size: 10px;
@@ -134,6 +130,7 @@ body {
 
 .mainDay > button {
   margin-top: 1rem;
+  margin-bottom: 100px;
   font-size: 2rem;
   margin-left: 400px;
   background: transparent;
@@ -155,16 +152,24 @@ body {
   margin: 15px;
 } */
 
-#cardContainer > i {
+/* #cardContainer > i {
   color: white;
-  /* filter: drop-shadow(30px 10px 4px #3d3d3d); */
   filter: drop-shadow(0 0 0.75rem #000000);
   display: inline-block;
-  /* width: 1px;
-  height: 4000px; */
-  /* margin-top: 100px;
-  margin-bottom: 100px; */
+
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 #cardContainer > i:hover {
   color: black;
+}
+ */
+
+#addcard {
+  display: inline-block;
+  margin: 5rem;
+}
+
+#addIcon {
+  color: white;
 }
