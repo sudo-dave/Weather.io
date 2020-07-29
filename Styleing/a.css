@@ -57,7 +57,7 @@ body {
   height: 650px;
   background-color: rgb(24, 47, 83);
   border-radius: 4%;
-  margin-top: 5rem;
+  margin-top: 1.5rem;
 
   margin-left: 2rem;
   margin-right: 2rem;
@@ -74,9 +74,9 @@ body {
 
 /* ************************* */
 .mainDay {
-  border-radius: 10% 10% 0 0;
+  border-radius: 4;
   width: 500px;
-  height: 700px;
+  height: 650px;
   display: inline-block;
   text-align: center;
 }
@@ -172,4 +172,31 @@ body {
 
 #addIcon {
   color: white;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card {
+    font-family: "Roboto", sans-serif;
+    width: 500px;
+    height: 650px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card {
+    margin-top: 2.5rem;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    margin-top: 5rem;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
