@@ -109,7 +109,7 @@ function getCurretWeather(input) {
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       input +
-      "&units=imperial&appid=2fefb7fcd6a37f2fb7c60079982b701d"
+      "&units=imperial&appid="
   )
     .then((response) => {
       if (response.ok) {
