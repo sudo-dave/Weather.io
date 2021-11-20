@@ -4,7 +4,7 @@ var inputContainer;
 var userInputTextFeild;
 var start;
 
-const apiKey = "2fefb7fcd6a37f2fb7c60079982b701d";
+const apiKey = "";
 
 window.onload = (load) => {
   if (apiKey) init();
