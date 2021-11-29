@@ -16,7 +16,6 @@ body {
   animation-duration: 0.7s;
   color: white;
   line-height: 2.5;
-  /* display:inline-block; */
 }
 #inputContainer > h1 {
   font-family: "Roboto", sans-serif;
@@ -91,7 +90,6 @@ body {
   font-size: 1.6rem;
   margin-bottom: 2rem;
   letter-spacing: 0.3rem;
-  /* filter: drop-shadow(0 0 0.75rem #000000); */
   filter: drop-shadow(0 0 0.075rem #ffffff);
 }
 .currentTemp {
@@ -105,7 +103,6 @@ body {
   width: 12%;
   margin-left: 17px;
 }
-/* afdadfadf */
 .moreData {
   display: flex;
   justify-content: center;
@@ -113,7 +110,6 @@ body {
 .moreData > div {
   text-align: center;
   margin: 45px 30px;
-  /* hadskjfhakdjsf */
   margin-bottom: 0;
   font-size: 10px;
 }
@@ -178,8 +174,4 @@ body {
   .card {
     margin-top: 5rem;
   }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }
