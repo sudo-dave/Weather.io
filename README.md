@@ -1,4 +1,4 @@
-# Weather-Web-Application
+# Weather.io
 
 <img src="Images/WeatherApp.gif">
 
